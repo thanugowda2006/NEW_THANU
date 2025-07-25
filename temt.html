@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Foodie Hub – About & Contact</title>
+  <style>
+    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family: 'Segoe UI', Tahoma, sans-serif; background:#f0f8f5; color:#333; line-height:1.6; }
+
+    nav { background:#ff7058; padding:1rem 2rem; display:flex; justify-content:space-between; align-items:center; }
+    nav .logo { color:white; font-size:2rem; font-weight:bold; }
+    nav ul { display:flex; gap:1rem; }
+    nav ul li a { color:white; padding:0.5rem 1rem; border-radius:4px; }
+    nav ul li a:hover { background:rgba(255,255,255,0.3); }
+
+    .hero { text-align:center; color:white; padding:4rem 2rem; background-size:cover; background-position:center; }
+    .hero.about { background:#ff7058 url('images/about-bg.jpg') center/cover no-repeat; }
+    .hero.contact { background:#009e8f url('images/contact-bg.jpg') center/cover no-repeat; }
+    .hero h1 { font-size:3rem; margin-bottom:1rem; }
+    .hero p { font-size:1.25rem; max-width:800px; margin:auto; }
+
+    .section { padding:2rem 1rem; }
+    .container { max-width:1000px; margin:auto; background:white; padding:2rem; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1); }
+
+    #about h2 { color:#ff7058; margin-bottom:1rem; }
+    #about p { margin-bottom:1rem; }
+    #about ul { margin-top:1rem; list-style:disc inside teal; color:#009e8f; }
+    #about ul li { margin-bottom:0.6rem; }
+
+    #team { display:flex; flex-wrap:wrap; gap:2rem; margin-top:2rem; }
+    .team-member { flex:1 1 30%; text-align:center; }
+    .team-member img { width:150px; height:150px; border-radius:50%; object-fit:cover; margin-bottom:0.8rem; }
+    .team-member h3 { color:#009e8f; margin-bottom:0.4rem; }
+    .team-member p { font-size:0.9rem; color:#555; }
+
+    #contact h2 { color:#009e8f; margin-bottom:1rem; }
+    #contact-form { display:grid; gap:1.5rem; }
+    #contact-form label { font-weight:bold; margin-bottom:0.3rem; display:block; }
+    #contact-form input, #contact-form textarea { width:100%; padding:0.8rem; border:1px solid #ccc; border-radius:4px; }
+    #contact-form textarea { resize:vertical; min-height:150px; }
+    #contact-form button { background:#ff7058; color:white; border:none; padding:0.8rem 2rem; font-size:1rem; cursor:pointer; border-radius:4px; width:max-content; }
+    #contact-form button:hover { background:#e65a45; }
+
+    .contact-details { margin-top:2rem; line-height:1.5; }
+    .contact-details h3 { color:#009e8f; margin-bottom:0.8rem; }
+    .contact-details mark { background:#ffefbf; }
+
+    .map-container { margin-top:2rem; width:100%; height:400px; border-radius:8px; overflow:hidden; }
+    .map-container iframe { width:100%; height:100%; border:0; }
+
+    footer { margin-top:3rem; background:#333; color:white; padding:1.5rem; text-align:center; }
+    footer .social a { color:white; margin:0 0.5rem; }
+
+    @media (max-width:768px) {
+      nav ul { flex-direction:column; align-items:center; }
+      #team { flex-direction:column; align-items:center; }
+      .hero h1 { font-size:2.4rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Foodie Hub</div>
+    <ul>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero about">
+    <h1>About Foodie Hub</h1>
+    <p>Connecting food lovers with local dining spots through seamless booking and transparent service.</p>
+  </section>
+
+  <section id="about" class="section container">
+    <h2>Our Story</h2>
+    <p>What started as a late-night frustration over unplanned queues, became a mission: <strong>no more empty stomachs or missed reservations.</strong> We built Foodie Hub to make dining effortless in your city.</p>
+    <p>Since launching in 2022, we’ve connected over <strong>50,000 diners</strong> with partner restaurants, earning trust one booking at a time.</p>
+
+    <h3>Our Mission & Vision</h3>
+    <p>We believe food should bring people together—not stress. So we promise <em>real-time availability, direct booking, and member-only perks.</em></p>
+
+    <h3>Why Choose Us</h3>
+    <ul>
+      <li>Real‑time table availability</li>
+      <li>Direct bookings—no surprises</li>
+      <li>Exclusive loyalty rewards</li>
+      <li>Verified reviews and honest feedback</li>
+      <li>Local support team based in Karnataka</li>
+    </ul>
+
+    <h3>Our Future</h3>
+    <p>Next year, we plan to incorporate city-based dining guides, loyalty tiers, and curated recommendations to enhance the Foodie Hub experience.</p>
+
+    <h3>Meet the Team</h3>
+    <div id="team">
+      <div class="team-member">
+        <img src="images/founder.jpg" alt="Alex Sharma">
+        <h3>Alex Sharma</h3>
+        <p>Founder &ndash; food lover with a vision to simplify dining.</p>
+      </div>
+      <div class="team-member">
+        <img src="images/cto.jpg" alt="Priya Desai">
+        <h3>Priya Desai</h3>
+        <p>CTO &ndash; building the tech backbone of real-time reservations.</p>
+      </div>
+      <div class="team-member">
+        <img src="images/marketing.jpg" alt="Rahul Mehta">
+        <h3>Rahul Mehta</h3>
+        <p>Marketing Lead &ndash; making local restaurants shine.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero contact">
+    <h1>Contact Us</h1>
+    <p>Have questions or feedback? We’d love to hear from you.</p>
+  </section>
+
+  <section id="contact" class="section container">
+    <h2>Reach Out</h2>
+    <p>Need help or interested in partnering? Let’s connect.</p>
+
+    <form id="contact-form" action="#" method="POST">
+      <div><label for="name">Full Name*</label><input type="text" id="name" name="name" required></div>
+      <div><label for="email">Email Address*</label><input type="email" id="email" name="email" required></div>
+      <div><label for="subject">Subject*</label><input type="text" id="subject" name="subject" required></div>
+      <div><label for="message">Message*</label><textarea id="message" name="message" required></textarea></div>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="contact-details">
+      <h3>Our Location</h3>
+      <p>📍 <mark>123 Culinary Street, Vijayapura, Karnataka, India</mark></p>
+      <p><strong>Phone:</strong> +91 98765 43210</p>
+      <p><strong>Email:</strong> support@foodiehub.com</p>
+      <p><strong>Hours:</strong> Mon–Sun: 9 AM–9 PM IST</p>
+    </div>
+
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=123+Culinary+Street,Vijayapura,Karnataka,India"
+              allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Foodie Hub. All rights reserved.</p>
+    <div class="social">
+      <a href="#">Facebook</a> |
+      <a href="#">Twitter</a> |
+      <a href="#">Instagram</a>
+    </div>
+  </footer>
+</body>
+</html>

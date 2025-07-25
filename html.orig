@@ -22,7 +22,7 @@ header {
 header h1 { margin: 0.5rem 0; font-size: 2.5rem; }
     header p { font-size: 1.1rem; color: #555; }
 
-    . contain {
+    .container {
       max-width: 900px;
       margin: -50px auto 2rem auto;
       background: #fff;
@@ -35,16 +35,15 @@ section + section { margin-top: 2rem; }
       margin-bottom: 1rem;
       padding-bottom: 0.5rem;
       border-bottom: 2px solid #e0e0e0;
-      font-si: 1.8rem;
+      font-size: 1.8rem;
     }
- #family .memb{
+ #family .member {
       display: flex;
-      align-ite: flex-start;
-      margin-bott: 1.2rem;
+      align-items: flex-start;
+      margin-bottom: 1.2rem;
     }
 #family .member img {
-      width: 80px; 
-     height: 80px;
+      width: 80px; height: 80px;
       border-radius: 50%;
       object-fit: cover;
       margin-right: 1rem;
@@ -144,17 +143,18 @@ footer a { color: #0077cc; text-decoration: none; }
   </div>
 
   <footer>
-
+<<<<<<< HEAD
     <p>Contact Me as a number:</p>
     <p>Email: <a href="mailto:your.email@example.com">thrishagowda @gmail.com</a></p>
     <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">thanu k.l</a></p>
+=======
     <p>phone number:</p>
     <p>Email: <a href="mailto:your.email@example.com">thanugowda@gmail.com</a></p>
     <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">thanu gowda</a></p>
-
+>>>>>>> master
   </footer>
 
 </body>
 </html>
 
-added on 2024 july
+
