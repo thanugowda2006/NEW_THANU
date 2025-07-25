@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Foodie Hub – About & Contact</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; color: #333; line-height: 1.6; }
+    header, footer { background: #ff6f61; color: white; text-align: center; padding: 1rem; }
+    nav { text-align: center; background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    nav a { margin: 0 1rem; padding: 1rem; display: inline-block; color: #ff6f61; text-decoration: none; }
+    nav a:hover { background: #ffe5e0; }
+    .container { max-width: 900px; margin: auto; padding: 2rem; }
+    .about-section { background: #fff3ee; padding: 2rem; text-align: center; border-radius: 8px; }
+    .about-section h1 { margin-top: 0; }
+    .team { display: flex; flex-wrap: wrap; gap: 2rem; margin-top: 2rem; }
+    .team .member { flex: 1 1 250px; background: #fafafa; padding: 1rem; border-radius: 8px; text-align: center; }
+    .team img { width: 100%; border-radius: 50%; height: 200px; object-fit: cover; }
+    .contact-section { background: #f9f9f9; padding: 2rem; border-radius: 8px; margin-top: 3rem; }
+    .contact-section h2 { text-align: center; }
+    .contact-fields { display: flex; flex-wrap: wrap; gap: 2rem; }
+    .contact-fields .form, .contact-fields .info { flex: 1 1 300px; }
+    form label { display: block; margin: .5rem 0 0.2rem; }
+    form input, form textarea { width: 100%; padding: .5rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px; }
+    form button { background: #ff6f61; color: white; border: none; padding: .75rem 1.5rem; border-radius: 4px; cursor: pointer; }
+    form button:hover { background: #e25b50; }
+    .info h3 { margin-top: 0; }
+    .info p, .info a { margin: .5rem 0; color: #ff6f61; }
+    iframe { border: 0; width: 100%; height: 200px; border-radius: 8px; margin-top: 1rem; }
+    @media (max-width: 600px) {
+      .team { flex-direction: column; }
+      .contact-fields { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Foodie Hub</h1>
+    <p>About & Contact</p>
+  </header>
+
+  <nav>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact Us</a>
+  </nav>
+
+  <div class="container">
+    <section id="about" class="about-section">
+      <h1>Welcome to Foodie Hub</h1>
+      <p>At Foodie Hub, we bring the best local flavors straight to your table. Founded in 2020 by chef-driven entrepreneurs, we prioritize fresh ingredients and authentic recipes.</p>
+      <p>Our mission: deliver delicious, wholesome meals with quick and friendly service—always cooked with care.</p>
+
+      <h2>Our Team</h2>
+      <div class="team">
+        <div class="member">
+          <img src="https://via.placeholder.com/200" alt="Alice - Founder & Chef">
+          <h3>Alice Kumar</h3>
+          <p><strong>Founder & Head Chef</strong></p>
+          <p>Passionate about farm-to-table cooking and crafting signature dishes.</p>
+        </div>
+        <div class="member">
+          <img src="https://via.placeholder.com/200" alt="Rohan - Operations Manager">
+          <h3>Rohan Singh</h3>
+          <p><strong>Operations Manager</strong></p>
+          <p>Ensures your orders are accurate, on-time, and delicious.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <h2>Get in Touch</h2>
+      <div class="contact-fields">
+        <div class="form">
+          <form id="contactForm">
+            <label>Name</label>
+            <input type="text" name="name" required>
+            <label>Email</label>
+            <input type="email" name="email" required>
+            <label>Phone</label>
+            <input type="tel" name="phone">
+            <label>Message</label>
+            <textarea name="message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+            <p id="formStatus"></p>
+          </form>
+        </div>
+        <div class="info">
+          <h3>Contact Info</h3>
+          <p><strong>Phone:</strong> +91‑9876543210</p>
+          <p><strong>Email:</strong> <a href="mailto:foodiehub@example.com">foodiehub@example.com</a></p>
+          <p><strong>Address:</strong><br>123 Food Lane, Bengaluru, Karnataka, India</p>
+          <iframe src="https://maps.google.com/maps?q=Bengaluru&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Foodie Hub. Made with passion 🍽️</p>
+  </footer>
+
+  <script>
+    document.getElementById('contactForm')
+      .addEventListener('submit', e => {
+        e.preventDefault();
+        document.getElementById('formStatus')
+          .textContent = 'Thank you! We’ll get back to you soon.';
+        e.target.reset();
+      });
+  </script>
+</body>
+</html>

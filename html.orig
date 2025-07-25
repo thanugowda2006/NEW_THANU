@@ -143,17 +143,18 @@ footer a { color: #0077cc; text-decoration: none; }
   </div>
 
   <footer>
-
+<<<<<<< HEAD
     <p>Contact Me as a number:</p>
     <p>Email: <a href="mailto:your.email@example.com">thrishagowda @gmail.com</a></p>
     <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">thanu k.l</a></p>
+=======
     <p>phone number:</p>
     <p>Email: <a href="mailto:your.email@example.com">thanugowda@gmail.com</a></p>
     <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">thanu gowda</a></p>
-
+>>>>>>> master
   </footer>
 
 </body>
 </html>
 
-added on 2024 july
+
